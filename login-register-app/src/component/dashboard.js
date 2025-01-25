@@ -8,7 +8,7 @@ const Dashboard = ({ setIsAuthenticated }) => {
 
   useEffect(() => {
     // Get user data from localStorage
-    const storedData = localStorage.getItem("user");
+    const storedData = localStorage.getItem("userData");
     if (storedData) {
       const parsedData = JSON.parse(storedData);
       setUsername(parsedData.username); // Set the username from the stored data
